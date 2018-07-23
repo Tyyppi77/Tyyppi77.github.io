@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"> 
+
+        <title>Olli-Samuli Lehmus</title>
+    </head>
+    <body>        
+        <div class="parallax-wrapper">
+            
+            <div class="container-fluid parallax-section background"></div>
+
+            <h1 class="display-1 text-center text-uppercase">Olli-Samuli Lehmus</h1>
+            <h2 class="display-5 text-center text-uppercase">Programmer & Game Developer</h2>
+
+            <div class="container content p-3 my-5 bordered-container" id="about">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="img-fluid d-inline-block align-middle h-100 position-relative p-3">
+                            <img src="me.jpg" class="w-100 align-middle rounded border "/>    
+                            
+                            <div class="d-flex justify-content-around mx-auto">
+                                <a class="contact-item" href="https://github.com/tyyppi77">
+                                    <img src="GitHub.png" class="img-fluid p-2"/>
+                                </a>
+                                <a class="contact-item" href="https://twitter.com/tyyppi_77">
+                                    <img src="twitter.svg" class="img-fluid p-2"/>
+                                </a>
+                                <a class="contact-item" href="mailto:olli-samuli@gunherogame.com">
+                                    <img src="Email.png" class="img-fluid p-2"/>
+                                </a>
+                            </div>
+                        </span>                       
+                    </div>
+                    <div class="col-md-8 p-3">
+                        <h1 class="text-uppercase">About</h1>
+
+                        <p>
+                        Hi, I'm Olli-Samuli. I study Computer Science at Aalto University School of Science.
+                        </p>
+                        <p>Looks like you've stumbled yourself onto my site! Here you can check out some of the projects I've worked one, the biggest one being my game GunHero. You can also find out how to get in touch with me here.</p>
+                        <p>I enjoy programming a lot, but I'm also a fairly good with everything that has to do with game development: I can draw simple pixel art, compose music, design levels and edit trailers.</p>
+                        <p>If I'm not programming or studying, I'm most likely playing the guitar. I've got a pretty cool pedal board setup which allows me to add all sorts of cool sounds and effects to my playing. I also like to make electronic music; I'm not very good at it though.</p>
+                        <p>I'm fairly active on <a href="https://gamedev.stackexchange.com/users/35344/tyyppi-77?tab=profile">Game Dev Stack Exchange</a>, the Stack Overflow of game development. I answer mostly SDL and Pygame questions, as those are the two libraries that I have a lot of experience. I've also provided answers to more generic game-programming questions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container content projects p-3 my-5" id="projects">
+                <h1 class="text-uppercase p-3">Projects</h1>
+                <div class="container project-item px-4">
+                    <h2>GunHero</h2>
+
+                    <div id="carouselExampleIndicators" class="carousel slide d-block my-3" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner bordered-container">
+                            <div class="carousel-item active">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" width="962" height="569" src="https://www.youtube.com/embed/QDKYdJFLqO4?showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="http://gunherogame.com/Resource/Screenshots/Prison1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="http://gunherogame.com/Resource/Screenshots/Jungle1.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="http://gunherogame.com/Resource/Screenshots/Forest2.png" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev ml-3" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next mr-3" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    
+                    <blockquote class="blockquote">
+                        <p class="m-2">
+                        “Simple in its mechanics but beautifully fiendish in the way it puts them all together, it’s an almost perfect blend of challenge vs. accomplishment.” 4/5 -   
+                        <a href="https://indiegamereviewer.com/review-gunhero-jump-n-gun-gem/">Indie Game Reviewer</a>
+                        </p>
+                    </blockquote>
+
+                    <p class="m-2">GunHero is a 2D action-platformer-shooter that I developed using a custom C++ framework built ontop of SDL2. The development process of the game took about 2.5 years from first prototype to initial release on Steam. The game has been updated post release to for an example include support for custom player created levels shared using the Steam Workshop.</p>
+
+                    <p class="m-2">The game consists of six differently themed areas with various obstacles and mechanics in each of them. Each area contains also a boss fight as the last level. There are a little over 125 levels in the game, built using the in-game level editor that was later released for public use.</p>
+
+                    <p class="m-2">The codebase for the game is currently around 100 000 lines. SDL2 handles the window management, input handling, rendering and audio on a low level, but the rest is handled by the custom code written ontop of that.</p>
+
+                    <div class="mt-3">
+                        <a href="https://store.steampowered.com/app/568840/GunHero/" role="button" class="btn btn-primary btn-lg m-2">Buy GunHero on Steam</a>
+                        <a href="https://gunherogame.com/" role="button" class="btn btn-primary btn-lg m-2">Visit GunHeroGame.com</a>
+                    </div>
+                </div>
+                
+                <hr class="mx-4" />
+
+                <div class="container project-item px-4">
+                    <h2>ImGuiSDL</h2>
+
+                    <img class="d-block w-100 my-3" src="ImGuiSDL.png">
+
+                    <p class="m-2">ImGuiSDL is a renderer for <a href="https://github.com/ocornut/imgui">Dear ImGui</a> that allows Dear ImGui to be rendered using a <code>SDL_Renderer.</code></p>
+
+                    <p class="m-2">By default, Dear ImGui is designed to be easily rendered using any modern 3D rendering API, like OpenGL or DirectX, by sending vertex and index buffers to a simple shader. While the modern SDL2 rendering pipeline does use hardware acceleration behind the scenes, it does not expose a cross-platform interface to passing in generic vertex data. That's why I built ImGuiSDL.</p>
+
+                    <p class="m-2">ImGuiSDL performs the rendering in two steps. First, it tries to find 6 adjacent vertices that form a rectangle that can be rendered in a quick fashion even if it is textured. If performing a rectangle rendering isn't possible, ImGuiSDL falls back to a fixed-point triangle rasterizer (that's not perfect but good enough for debug use, just like Dear ImGui is intended to be used). Because the triangle rasterization is slow, the result is cached into a render texture so that following frames can quickly just do a texture draw to the screen.</p>
+
+                    <p class="m-2">ImGuiSDL is implemented in C++ in a easy-to-use manner: to use it, one needs to add two files to their build, and call one function to initialize the library and another to render.</p>
+
+                    <div class="mt-3">
+                        <a href="https://github.com/tyyppi77/imgui_sdl" role="button" class="btn btn-primary btn-lg m-2">View ImGuiSDL on GitHub</a>
+                    </div>
+                </div>
+                
+                <hr class="mx-4" />
+                
+                <div class="container project-item px-4">
+                    <h2>Other</h2>
+                    
+                    <p class="m-2">I've also worked on various smaller website projects.</p>
+                    
+                    <div class="container row p-3">
+                        <div class="col-md-4">
+                            <a href="http://pipoproductions.com/"><img src="PipoProductions.png" class="w-100 img-fluid border rounded"/></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a href="http://pipoproductions.com/" class="title-link"><h3 class="my-2">PipoProductions.com</h3></a>
+                            <p class="p-1">PipoProductions.com is a website I built for a friend. It uses a pretty cool single-page layout that divides the page into nice sections. This was my first time building a webpage from existing design, which was a nice change from having to design the page myself.</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="light"/>
+                    
+                    <div class="container row p-3">
+                        <div class="col-md-4">
+                            <a href="https://gunherogame.com/"><img src="GunHeroWebsite.png" class="w-100 img-fluid border rounded"/></a>
+                        </div>
+                        <div class="col-md-8">
+                            <a href="https://gunherogame.com/" class="title-link"><h3 class="my-2">GunHeroGame.com</h3></a>
+                            <p class="p-1">GunHeroGame.com is a website that I built for my game. It has heavy focus on providing as much visual information about the game as possible, with the trailer having the biggest focus on the page. The website also has a presskit for anyone interested, that contains the trailer, screenshot and promo art of the game.</p>
+                            <p class="p-1">The site also has a devblog that is built using Jekyll. The site is hosted on GitHub.</p>
+                            <a href="https://github.com/tyyppi77/GunHeroWebsite" role="button" class="btn btn-primary btn-lg m-2">View Website on GitHub</a>
+                            <a href="https://github.com/tyyppi77/GunHeroBlog" role="button" class="btn btn-primary btn-lg m-2">View Blog on GitHub</a>
+                        </div>
+                    </div>
+                    
+                    <hr class="light"/>
+                    
+                    <div class="container row p-3">
+                        <div class="col-md-4">
+                            <img src="cannarit.png" class="w-100 img-fluid border rounded"/>
+                        </div>
+                        <div class="col-md-8">
+                            <h3 class="my-2">Cannarit.fi </h3>
+                            <small class="text-muted p-1">(No link, the site has been replaced by the 2018 site)</small>
+                            <p class="p-1">
+                            Cannarit.fi is a webpage for a party that the computer science freshmen host every year. I was glad to be part of the website team. This was one of the first times I worked with a lot of people on a project. The site took input from the actual party planners, the graphic design team and also the other developer of the site.
+                            </p>
+                            <p class="p-1">My responsibilities were setting up the site layout and implementing the looks on computer screens. I also implemented the timer that was displayed on the site.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    </body>
+</html>

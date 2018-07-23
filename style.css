@@ -1,0 +1,141 @@
+body {
+    /*background: #242424;*/
+    background: #222222;
+    color: white;
+    
+    font-family: 'Noto Sans', sans-serif !important;
+    
+    overflow-y: hidden;
+}
+
+.parallax-wrapper {
+	height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.parallax-section {
+    position: relative;
+    
+    height: 100vh;
+}
+
+.parallax-section:after {
+    content: " ";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transform: translateZ(-3px) scale(3);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.background {
+    height: 10vh;
+    
+    background: #5f3788;
+}
+
+.background::after {
+    margin-top: -100vh;
+    height: 90vh;
+    
+    background: #5f3788;
+    
+    background-size:
+        2vw 2vw, 2vw 2vw, 2vw 2vw, 2vw 2vw,
+        200% 4rem, 200% 4rem;
+    background-position: bottom center, bottom center;
+    background-image: linear-gradient( 45deg, rgba(34, 34, 34,1) 50%, rgba(255,255,255,0) 50% ),
+        linear-gradient( -45deg, rgba(34, 34, 34,1) 50%, rgba(255, 255, 255,0) 50% );
+    background-repeat: repeat-x;
+}
+
+.content {
+    background: white;
+    color: black;
+}
+
+.carousel-indicators {
+    margin: 0px auto;
+    position: relative;
+    top: 1em;
+}
+
+hr {
+    background: #222222;
+    opacity: 0.1;
+    height: 0.125em;
+    border-radius: 2px;
+}
+
+hr.light {
+    width: 80%;
+}
+
+a {
+    color: #891af8;
+}
+
+a:hover {
+    color: #891af8;
+}
+
+.btn-primary {
+    background: #222222;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #5f3788;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    background: #222222;
+    
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    transform: translateY(-50%);
+    
+    padding: 0em;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {    
+    width: 50%;
+    height: 100%;
+    
+    display: block;
+    margin: 0px auto;
+}
+
+.nav-link.active {
+    color: black !important;
+}
+.nav-link {
+    color: grey !important;
+}
+.nav-link:hover {
+    color: black !important;
+}
+
+.title-link {
+    color: black;
+}
+
+.contact-item img {
+    width: 5em;
+    height: auto;
+}
+
+.contact-item {
+    color: black !important;
+}
