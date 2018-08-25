@@ -81,13 +81,7 @@ body {
     }
 
     .parallax-section {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 30%;
-        right: 100%;
-
-        z-index: -1;
+        display: none;
     }
 
     .parallax-section:after {
