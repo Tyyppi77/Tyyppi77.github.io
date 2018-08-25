@@ -62,11 +62,11 @@ body {
 
 @media (max-width: 768px) { 
     .background {
-        /*display: none;*/
+        height: auto;
     }
 
     .background::after {
-        background-size: 16px 16px, 16px 16px, 16px 16px, 16px 16px, 50% 16px, 50% 16px;
+        display: none;
     }
 
     body {
@@ -78,6 +78,20 @@ body {
         overflow-x: visible;
         overflow-y: visible;
         perspective: none;
+    }
+
+    .parallax-section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 30%;
+        right: 100%;
+
+        z-index: -1;
+    }
+
+    .parallax-section:after {
+        display: none;
     }
 }
 
