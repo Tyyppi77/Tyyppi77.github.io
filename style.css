@@ -8,6 +8,11 @@ body {
     overflow-y: hidden;
 }
 
+/* Custom scale thingy because Bootstrap's display-X rules are not very reponsive. */
+.large-text {
+    font-size: 4em;
+}
+
 .parallax-wrapper {
 	height: 100vh;
     overflow-x: hidden;
@@ -53,6 +58,19 @@ body {
     background-image: linear-gradient( 45deg, rgba(34, 34, 34,1) 50%, rgba(255,255,255,0) 50% ),
         linear-gradient( -45deg, rgba(34, 34, 34,1) 50%, rgba(255, 255, 255,0) 50% );
     background-repeat: repeat-x;
+}
+
+@media (max-width: 768px) { 
+    .background {
+        height: 5vh;
+    }
+
+    .background::after {
+        background-image: none;
+        background-size: 100%;
+        background-repeat: none;
+        background-position: top;
+    }
 }
 
 .content {
@@ -138,4 +156,19 @@ a:hover {
 
 .contact-item {
     color: black !important;
+}
+
+.dont-break-out {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
 }

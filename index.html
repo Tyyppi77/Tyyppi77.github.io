@@ -15,18 +15,18 @@
 
         <title>Olli-Samuli Lehmus</title>
     </head>
-    <body>        
-        <div class="parallax-wrapper">
+    <body class="mb-1">        
+        <div class="parallax-wrapper mb-1">
             
             <div class="container-fluid parallax-section background"></div>
 
-            <h1 class="display-2 text-center text-uppercase">Olli-Samuli Lehmus</h1>
-            <h3 class="text-center text-uppercase">Programmer & Game Developer</h3>
+            <h1 class="large-text text-center text-uppercase">Olli-Samuli Lehmus</h1>
+            <h3 class="text-center text-uppercase mb-5">Programmer & Game Developer</h3>
 
-            <div class="container content p-3 my-5 bordered-container" id="about">
-                <div class="row">
+            <div class="container content p-4 my-2 bordered-container" id="about">
+                <div class="row p-0">
                     <div class="col-md-4">
-                        <span class="img-fluid d-inline-block align-middle h-100 position-relative p-3">
+                        <span class="img-fluid d-inline-block align-middle h-100 position-relative py-4">
                             <img src="me.jpg" class="w-100 align-middle rounded border "/>    
                             
                             <div class="d-flex justify-content-around mx-auto">
@@ -42,7 +42,7 @@
                             </div>
                         </span>                       
                     </div>
-                    <div class="col-md-8 p-3">
+                    <div class="col-md-8 p-4">
                         <h1 class="text-uppercase">About</h1>
 
                         <p>
@@ -56,9 +56,9 @@
                 </div>
             </div>
 
-            <div class="container content projects p-3 my-5" id="projects">
-                <h1 class="text-uppercase p-3">Projects</h1>
-                <div class="container project-item px-4">
+            <div class="container content projects p-4 my-2" id="projects">
+                <h1 class="text-uppercase">Projects</h1>
+                <div class="container project-item p-0">
                     <h2>GunHero</h2>
 
                     <div id="carouselExampleIndicators" class="carousel slide d-block my-3" data-ride="carousel">
@@ -95,89 +95,89 @@
                     </div>
                     
                     <blockquote class="blockquote">
-                        <p class="m-2">
+                        <p class="my-2">
                         “Simple in its mechanics but beautifully fiendish in the way it puts them all together, it’s an almost perfect blend of challenge vs. accomplishment.” 4/5 -   
                         <a href="https://indiegamereviewer.com/review-gunhero-jump-n-gun-gem/">Indie Game Reviewer</a>
                         </p>
                     </blockquote>
 
-                    <p class="m-2">GunHero is a 2D action-platformer-shooter that I developed using a custom C++ framework built ontop of SDL2. The development process of the game took about 2.5 years from first prototype to initial release on Steam. The game has been updated post release to for an example include support for custom player created levels shared using the Steam Workshop.</p>
+                    <p class="my-2">GunHero is a 2D action-platformer-shooter that I developed using a custom C++ framework built ontop of SDL2. The development process of the game took about 2.5 years from first prototype to initial release on Steam. The game has been updated post release to for an example include support for custom player created levels shared using the Steam Workshop.</p>
 
-                    <p class="m-2">The game consists of six differently themed areas with various obstacles and mechanics in each of them. Each area contains also a boss fight as the last level. There are a little over 125 levels in the game, built using the in-game level editor that was later released for public use.</p>
+                    <p class="my-2">The game consists of six differently themed areas with various obstacles and mechanics in each of them. Each area contains also a boss fight as the last level. There are a little over 125 levels in the game, built using the in-game level editor that was later released for public use.</p>
 
-                    <p class="m-2">The codebase for the game is currently around 100 000 lines. SDL2 handles the window management, input handling, rendering and audio on a low level, but the rest is handled by the custom code written ontop of that.</p>
+                    <p class="my-2">The codebase for the game is currently around 100 000 lines. SDL2 handles the window management, input handling, rendering and audio on a low level, but the rest is handled by the custom code written ontop of that.</p>
 
-                    <div class="mt-3">
-                        <a href="https://store.steampowered.com/app/568840/GunHero/" role="button" class="btn btn-primary btn-lg m-2">Buy GunHero on Steam</a>
-                        <a href="https://gunherogame.com/" role="button" class="btn btn-primary btn-lg m-2">Visit GunHeroGame.com</a>
+                    <div class="p-0">
+                        <a href="https://store.steampowered.com/app/568840/GunHero/" role="button" class="btn btn-primary my-2 mr-2">Buy GunHero on Steam</a>
+                        <a href="https://gunherogame.com/" role="button" class="btn btn-primary my-2">Visit GunHeroGame.com</a>
                     </div>
                 </div>
                 
                 <hr class="mx-4" />
 
-                <div class="container project-item px-4">
+                <div class="container project-item p-0">
                     <h2>ImGuiSDL</h2>
 
                     <img class="d-block w-100 my-3" src="ImGuiSDL.png">
 
-                    <p class="m-2">ImGuiSDL is a renderer for <a href="https://github.com/ocornut/imgui">Dear ImGui</a> that allows Dear ImGui to be rendered using a <code>SDL_Renderer.</code></p>
+                    <p class="my-2">ImGuiSDL is a renderer for <a href="https://github.com/ocornut/imgui">Dear ImGui</a> that allows Dear ImGui to be rendered using a <code>SDL_Renderer.</code></p>
 
-                    <p class="m-2">By default, Dear ImGui is designed to be easily rendered using any modern 3D rendering API, like OpenGL or DirectX, by sending vertex and index buffers to a simple shader. While the modern SDL2 rendering pipeline does use hardware acceleration behind the scenes, it does not expose a cross-platform interface to passing in generic vertex data. That's why I built ImGuiSDL.</p>
+                    <p class="my-2">By default, Dear ImGui is designed to be easily rendered using any modern 3D rendering API, like OpenGL or DirectX, by sending vertex and index buffers to a simple shader. While the modern SDL2 rendering pipeline does use hardware acceleration behind the scenes, it does not expose a cross-platform interface to passing in generic vertex data. That's why I built ImGuiSDL.</p>
 
-                    <p class="m-2">ImGuiSDL performs the rendering in two steps. First, it tries to find 6 adjacent vertices that form a rectangle that can be rendered in a quick fashion even if it is textured. If performing a rectangle rendering isn't possible, ImGuiSDL falls back to a fixed-point triangle rasterizer (that's not perfect but good enough for debug use, just like Dear ImGui is intended to be used). Because the triangle rasterization is slow, the result is cached into a render texture so that following frames can quickly just do a texture draw to the screen.</p>
+                    <p class="my-2">ImGuiSDL performs the rendering in two steps. First, it tries to find 6 adjacent vertices that form a rectangle that can be rendered in a quick fashion even if it is textured. If performing a rectangle rendering isn't possible, ImGuiSDL falls back to a fixed-point triangle rasterizer (that's not perfect but good enough for debug use, just like Dear ImGui is intended to be used). Because the triangle rasterization is slow, the result is cached into a render texture so that following frames can quickly just do a texture draw to the screen.</p>
 
-                    <p class="m-2">ImGuiSDL is implemented in C++ in a easy-to-use manner: to use it, one needs to add two files to their build, and call one function to initialize the library and another to render.</p>
+                    <p class="my-2">ImGuiSDL is implemented in C++ in a easy-to-use manner: to use it, one needs to add two files to their build, and call one function to initialize the library and another to render.</p>
 
-                    <div class="mt-3">
-                        <a href="https://github.com/tyyppi77/imgui_sdl" role="button" class="btn btn-primary btn-lg m-2">View ImGuiSDL on GitHub</a>
+                    <div class="p-0">
+                        <a href="https://github.com/tyyppi77/imgui_sdl" role="button" class="btn btn-primary my-2 dont-break-out">View ImGuiSDL on GitHub</a>
                     </div>
                 </div>
                 
                 <hr class="mx-4" />
                 
-                <div class="container project-item px-4">
+                <div class="container project-item p-0">
                     <h2>Other</h2>
                     
-                    <p class="m-2">I've also worked on various smaller website projects.</p>
+                    <p class="my-2">I've also worked on various smaller website projects.</p>
                     
-                    <div class="container row p-3">
+                    <div class="container row p-0">
                         <div class="col-md-4">
                             <a href="http://pipoproductions.com/"><img src="PipoProductions.png" class="w-100 img-fluid border rounded"/></a>
                         </div>
                         <div class="col-md-8">
-                            <a href="http://pipoproductions.com/" class="title-link"><h3 class="my-2">PipoProductions.com</h3></a>
-                            <p class="p-1">PipoProductions.com is a website I built for a friend. It uses a pretty cool single-page layout that divides the page into nice sections. This was my first time building a webpage from existing design, which was a nice change from having to design the page myself.</p>
+                            <a href="http://pipoproductions.com/" class="title-link dont-break-out"><h3 class="my-2">PipoProductions.com</h3></a>
+                            <p class="my-2">PipoProductions.com is a website I built for a friend. It uses a pretty cool single-page layout that divides the page into nice sections. This was my first time building a webpage from existing design, which was a nice change from having to design the page myself.</p>
                         </div>
                     </div>
                     
                     <hr class="light"/>
                     
-                    <div class="container row p-3">
+                    <div class="container row p-0">
                         <div class="col-md-4">
                             <a href="https://gunherogame.com/"><img src="GunHeroWebsite.png" class="w-100 img-fluid border rounded"/></a>
                         </div>
                         <div class="col-md-8">
-                            <a href="https://gunherogame.com/" class="title-link"><h3 class="my-2">GunHeroGame.com</h3></a>
-                            <p class="p-1">GunHeroGame.com is a website that I built for my game. It has heavy focus on providing as much visual information about the game as possible, with the trailer having the biggest focus on the page. The website also has a presskit for anyone interested, that contains the trailer, screenshot and promo art of the game.</p>
-                            <p class="p-1">The site also has a devblog that is built using Jekyll. The site is hosted on GitHub.</p>
-                            <a href="https://github.com/tyyppi77/GunHeroWebsite" role="button" class="btn btn-primary btn-lg m-2">View Website on GitHub</a>
-                            <a href="https://github.com/tyyppi77/GunHeroBlog" role="button" class="btn btn-primary btn-lg m-2">View Blog on GitHub</a>
+                            <a href="https://gunherogame.com/" class="title-link dont-break-out"><h3 class="my-2">GunHeroGame.com</h3></a>
+                            <p class="my-2">GunHeroGame.com is a website that I built for my game. It has heavy focus on providing as much visual information about the game as possible, with the trailer having the biggest focus on the page. The website also has a presskit for anyone interested, that contains the trailer, screenshot and promo art of the game.</p>
+                            <p class="my-2">The site also has a devblog that is built using Jekyll. The site is hosted on GitHub.</p>
+                            <a href="https://github.com/tyyppi77/GunHeroWebsite" role="button" class="btn btn-primary my-2 mr-2">View Website on GitHub</a>
+                            <a href="https://github.com/tyyppi77/GunHeroBlog" role="button" class="btn btn-primary my-2">View Blog on GitHub</a>
                         </div>
                     </div>
                     
                     <hr class="light"/>
                     
-                    <div class="container row p-3">
+                    <div class="container row p-0">
                         <div class="col-md-4">
                             <img src="cannarit.png" class="w-100 img-fluid border rounded"/>
                         </div>
                         <div class="col-md-8">
-                            <h3 class="my-2">Cannarit.fi </h3>
-                            <small class="text-muted p-1">(No link, the site has been replaced by the 2018 site)</small>
-                            <p class="p-1">
+                            <h3 class="my-2 dont-break-out">Cannarit.fi </h3>
+                            <small class="text-muted my-2">(No link, the site has been replaced by the 2018 site)</small>
+                            <p class="my-2">
                             Cannarit.fi is a webpage for a party that the computer science freshmen host every year. I was glad to be part of the website team. This was one of the first times I worked with a lot of people on a project. The site took input from the actual party planners, the graphic design team and also the other developer of the site.
                             </p>
-                            <p class="p-1">My responsibilities were setting up the site layout and implementing the looks on computer screens. I also implemented the timer that was displayed on the site.</p>
+                            <p class="my-2">My responsibilities were setting up the site layout and implementing the looks on computer screens. I also implemented the timer that was displayed on the site.</p>
                         </div>
                     </div>
                 </div>
