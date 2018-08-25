@@ -60,7 +60,7 @@ body {
     background-repeat: repeat-x;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 575px) { 
     .background {
         height: auto;
     }
