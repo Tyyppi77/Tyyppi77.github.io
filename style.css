@@ -62,7 +62,7 @@ body {
 
 @media (max-width: 575px) { 
     .background {
-        height: auto;
+        height: 100vh;
     }
 
     .background::after {
