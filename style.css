@@ -52,8 +52,8 @@ body {
     background: #5f3788;
     
     background-size:
-        2vw 2vw, 2vw 2vw, 2vw 2vw, 2vw 2vw,
-        200% 4rem, 200% 4rem;
+        48px 48px, 48px 48px, 48px 48px, 48px 48px,
+        100% 48px, 100% 48px;
     background-position: bottom center, bottom center;
     background-image: linear-gradient( 45deg, rgba(34, 34, 34,1) 50%, rgba(255,255,255,0) 50% ),
         linear-gradient( -45deg, rgba(34, 34, 34,1) 50%, rgba(255, 255, 255,0) 50% );
@@ -62,14 +62,22 @@ body {
 
 @media (max-width: 768px) { 
     .background {
-        height: 5vh;
+        /*display: none;*/
     }
 
     .background::after {
-        background-image: none;
-        background-size: 100%;
-        background-repeat: none;
-        background-position: top;
+        background-size: 16px 16px, 16px 16px, 16px 16px, 16px 16px, 50% 16px, 50% 16px;
+    }
+
+    body {
+        overflow-y: visible;    
+    }
+    
+    .parallax-wrapper {
+        height: auto;
+        overflow-x: visible;
+        overflow-y: visible;
+        perspective: none;
     }
 }
 
